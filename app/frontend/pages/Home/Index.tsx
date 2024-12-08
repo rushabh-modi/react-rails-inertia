@@ -1,14 +1,18 @@
 import { Head } from '@inertiajs/react';
+import type { IUser } from '@/types/user';
 
 interface IndexProps {
   name: string;
+  user: IUser;
 }
 
-export default function Index({ name }: IndexProps) {
+export default function Index({ name, user }: IndexProps) {
   return (
     <>
       <Head title="Home" />
-      <h1>Hello, {name}</h1>
+      <h1>Hello {name}</h1>
+      <h1>{user.name}</h1>
+      <h1>{user.email}</h1>
     </>
   );
 }
