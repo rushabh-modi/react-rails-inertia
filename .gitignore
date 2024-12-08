@@ -44,3 +44,4 @@ node_modules
 .overmind.sock
 
 .ruby-lsp
+.ruby-gemset
