@@ -1,9 +1,9 @@
 import { Head } from '@inertiajs/react';
-import type { IUser } from '@/types/user';
+// import type { IUser } from '@/types/user';
 
 interface IndexProps {
   name: string;
-  user: IUser;
+  user: Schema.User;
 }
 
 export default function Index({ name, user }: IndexProps) {

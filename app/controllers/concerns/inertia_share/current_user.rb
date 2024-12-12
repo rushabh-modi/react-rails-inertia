@@ -5,7 +5,7 @@ module InertiaShare::CurrentUser
 
   included do
     inertia_share do 
-      { user: current_user ? serialize(current_user, UserSerializer) : nil } 
+      { user: current_user ? UserSerializer.render(current_user) : nil } 
     end
   end
 end
